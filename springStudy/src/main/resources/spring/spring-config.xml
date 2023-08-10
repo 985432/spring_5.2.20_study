@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="
+          http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 1.使用类的无参构造函数创建 -->
+<!--	<bean id="user1" class="com.wanglele.entity.User" scope="singleton" lazy-init="true" primary="true"/>-->
+<!--	&lt;!&ndash; 2.使用静态工厂进行创建 &ndash;&gt;-->
+<!--	&lt;!&ndash; class的值不是写User对象的全路径，而是写静态工厂的全路径 &ndash;&gt;-->
+<!--	&lt;!&ndash; factory-method的值是静态工厂中的静态方法 &ndash;&gt;-->
+<!--	<bean id="user2" class="com.wanglele.entity.factory.StaticFactory" factory-method="getUser" scope="singleton"/>-->
+<!--	&lt;!&ndash; 3.使用实例工厂进行创建 &ndash;&gt;-->
+<!--	&lt;!&ndash; 需要先创建factoryBean对象，再通过factoryBean对象进行调用 &ndash;&gt;-->
+<!--	<bean id="userFactory" class="com.wanglele.entity.factory.UserFactory"/>-->
+<!--	<bean id="user3" factory-bean="userFactory" factory-method="getUser" scope="singleton"/>-->
+<!--	<bean id="userFactoryBean" class="com.wanglele.entity.factory.UserFactoryBean"/>-->
+
+	<bean id="welcomeService" class="com.wanglele.service.impl.WelcomeServiceImpl"/>
+</beans>
